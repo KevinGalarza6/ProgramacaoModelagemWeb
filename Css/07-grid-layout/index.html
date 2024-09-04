@@ -9,23 +9,25 @@
       
       
       
+        <link rel="prev" href="../06-flexbox/">
       
-        <link rel="next" href="Css/01-introducao/">
+      
+        <link rel="next" href="../08-estilizacao-avancada-e-animacoes/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
     
     
       
-        <title>Programação e Modelagem para Web</title>
+        <title>7 - Grid Layout - Programação e Modelagem para Web</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introducao" class="md-skip">
+        <a href="#7-grid-layout" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -84,9 +86,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="." title="Programação e Modelagem para Web" class="md-header__button md-logo" aria-label="Programação e Modelagem para Web" data-md-component="logo">
+    <a href="../.." title="Programação e Modelagem para Web" class="md-header__button md-logo" aria-label="Programação e Modelagem para Web" data-md-component="logo">
       
-  <img src="images/typescript-logo.png" alt="logo">
+  <img src="../../images/typescript-logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -103,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introdução
+              7 - Grid Layout
             
           </span>
         </div>
@@ -201,11 +203,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -220,11 +220,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="Css/01-introducao/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../01-introducao/" class="md-tabs__link">
           
   
     
@@ -259,9 +261,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Programação e Modelagem para Web" class="md-nav__button md-logo" aria-label="Programação e Modelagem para Web" data-md-component="logo">
+    <a href="../.." title="Programação e Modelagem para Web" class="md-nav__button md-logo" aria-label="Programação e Modelagem para Web" data-md-component="logo">
       
-  <img src="images/typescript-logo.png" alt="logo">
+  <img src="../../images/typescript-logo.png" alt="logo">
 
     </a>
     Programação e Modelagem para Web
@@ -273,19 +275,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -294,7 +287,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -303,8 +295,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -331,17 +325,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -352,7 +349,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Css
@@ -366,7 +363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Css/01-introducao/" class="md-nav__link">
+      <a href="../01-introducao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -387,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Css/02-seletores-especificidade/" class="md-nav__link">
+      <a href="../02-seletores-especificidade/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -408,7 +405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Css/03-cores-e-unidades/" class="md-nav__link">
+      <a href="../03-cores-e-unidades/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -429,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Css/04-tipografia/" class="md-nav__link">
+      <a href="../04-tipografia/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -450,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Css/05-box-model-e-layout/" class="md-nav__link">
+      <a href="../05-box-model-e-layout/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -471,7 +468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Css/06-flexbox/" class="md-nav__link">
+      <a href="../06-flexbox/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -489,10 +486,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Css/07-grid-layout/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -501,6 +507,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -513,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Css/08-estilizacao-avancada-e-animacoes/" class="md-nav__link">
+      <a href="../08-estilizacao-avancada-e-animacoes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -534,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Css/09-responsividade-e-media-queries/" class="md-nav__link">
+      <a href="../09-responsividade-e-media-queries/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -555,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Css/10-boas-praticas-e-otimizacao/" class="md-nav__link">
+      <a href="../10-boas-praticas-e-otimizacao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -609,8 +616,14 @@
                   
 
 
-<h1 id="introducao">Introdução</h1>
-<p>Documentação geral dos assuntos tratados na aula de Programção e Modelagem para Web.</p>
+<h1 id="7-grid-layout">7 - Grid Layout</h1>
+<p>Objetivo: Apresentar o CSS Grid e suas capacidades para criação de layouts complexos.
+Conteúdo:
+Introdução ao CSS Grid.
+Containers e itens de grid.
+Definindo colunas e linhas: grid-template-columns, grid-template-rows.
+Áreas de grid e alinhamento de itens.
+Prática: Desenvolver um layout de página com cabeçalho, conteúdo principal e rodapé usando CSS Grid.</p>
 
 
 
@@ -665,10 +678,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.annotate", "content.tabs.link", "navigation.tabs", "navigation.top", "search.highlight", "search.share", "navigation.indexes"], "search": "assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.tabs", "navigation.top", "search.highlight", "search.share", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
     
   </body>
