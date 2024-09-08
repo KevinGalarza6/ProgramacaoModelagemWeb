@@ -1,165 +1,173 @@
+
 # 5 - Box Model e Layout
 
-### O box model do CSS é fundamental no desenvolvimento web, pois define a aparência e a disposição dos elementos na página.
+### O Box Model no CSS é essencial para o desenvolvimento web, pois define como os elementos são dispostos e estilizados na página.
 
-<div style="text-align:-webkit-center ">
-    <div style="width: 50%">
-        <img src="../../images/representacao-box-model.png">
-    </div>
+<div style="text-align:center">
+    <img src="../../images/representacao-box-model.png" alt="Representação do Box Model" style="width:50%;">
 </div>
-
 
 ### Componentes do Box Model:
 
-#### 1. Largura ( width )
+#### 1. Largura (width)
 
-#### 2. Altura ( height )
+Define a largura do conteúdo de um elemento.
 
-#### 3. Preenchimento Interno
+#### 2. Altura (height)
 
-* __padding-top__    - *Superior*
-* __padding-right__  - *Direita*
-* __padding-bottom__ - *Inferior*
-* __padding-left__   - *Esquerda*
-* __padding__        - *Defini o mesmo padding para todos os lados iguais*
+Define a altura do conteúdo de um elemento.
 
-#### 4. Bordas
-* __border-width__ - *Define a lagura da borda*
-* __border-style__ - *Defini o estilo da borda*
-* __border-color__ - *Defini a cor da borda*
+#### 3. Preenchimento Interno (Padding)
 
-#### 5. Margens
+- **padding-top**: Espaço interno no topo.
+- **padding-right**: Espaço interno à direita.
+- **padding-bottom**: Espaço interno na parte inferior.
+- **padding-left**: Espaço interno à esquerda.
+- **padding**: Define o mesmo preenchimento para todos os lados.
 
-* __margin-top__ - *Defini margin superior*
-* __margin-right__ - *Defini margin para o lado direito*
-* __margin-bottom__ - *Defini margin inferior*
-* __margin-left__ - *Defini margin para o lado esquerdo*
-* __margin__ *Defini o mesmo margin para todos os quatro lados iguais*
+#### 4. Bordas (Border)
+
+- **border-width**: Define a largura da borda.
+- **border-style**: Define o estilo da borda.
+- **border-color**: Define a cor da borda.
+
+#### 5. Margens (Margin)
+
+- **margin-top**: Define a margem superior.
+- **margin-right**: Define a margem à direita.
+- **margin-bottom**: Define a margem inferior.
+- **margin-left**: Define a margem à esquerda.
+- **margin**: Define a mesma margem para todos os lados.
 
 #### 6. Display
-* __Block__
-* __Inline__
-* __Inline-block__
 
-### __Exemplo 1 (Definindo Largura - width)__
+Define como o elemento será exibido na página.
+
+- **Block**: O elemento ocupa toda a largura disponível.
+- **Inline**: O elemento ocupa apenas o espaço necessário.
+- **Inline-block**: Combina as características de block e inline.
+
+### Exemplo 1: Definindo Largura (width)
 
 <div style="background-color: blue; width: 50%">
     <h1>Box Model</h1>
      <p>
-       Defini Largura
+       Definindo Largura
      </p>
 </div>
 
-~~~html
+```html
 <div style="background-color: blue; width: 50%">
     <h1>Box Model</h1>
     <p>
-        Defini Largura
+        Definindo Largura
     </p>
 </div>
-~~~
+```
 
-### **Exemplo 2 (Definindo Altura - height)**
+### Exemplo 2: Definindo Altura (height)
 
 <div style="background-color: blue; height: 2rem">
     <h1>Box Model</h1>
      <p>
-       Defini Altura
+       Definindo Altura
      </p>
 </div>
 
-~~~html
-
+```html
 <div style="background-color: blue; height: 2rem">
     <h1>Box Model</h1>
     <p>
-        Defini Altura
+        Definindo Altura
     </p>
 </div>
-~~~
+```
 
-### __Exemplo 3 (Preenchimento Interno)__
-
-<div style="background-color: blue; padding: 1rem">
-    <h1>Box Model</h1>
-     <p>
-       Defini Largura
-     </p>
-</div>
-
-~~~html
+### Exemplo 3: Preenchimento Interno (Padding)
 
 <div style="background-color: blue; padding: 1rem">
     <h1>Box Model</h1>
      <p>
-       Defini Largura
+       Definindo Preenchimento
      </p>
 </div>
-~~~
 
-### __Exemplo 4 ( Bordas )__
+```html
+<div style="background-color: blue; padding: 1rem">
+    <h1>Box Model</h1>
+    <p>
+        Definindo Preenchimento
+    </p>
+</div>
+```
+
+### Exemplo 4: Bordas (Border)
 
 <div style="background-color: blue; padding: 1rem">
-    <h1 style="border-width: 5px;border-style: solid; border-color: #fff;">Box Model</h1>
+    <h1 style="border-width: 5px; border-style: solid; border-color: #fff;">Box Model</h1>
      <p>
-       Defini Borda
+       Definindo Borda
      </p>
 </div>
 
-~~~html
-
+```html
 <div style="background-color: blue; padding: 1rem">
-    <h1 style="border-width: 5px;border-style: solid; border-color: #fff;">Box Model</h1>
-     <p>
-       Defini Borda
-     </p>
+    <h1 style="border-width: 5px; border-style: solid; border-color: #fff;">Box Model</h1>
+    <p>
+        Definindo Borda
+    </p>
 </div>
-~~~
+```
 
-### __Exemplo 5 ( Margens )__
+### Exemplo 5: Margens (Margin)
+
 <div style="background-color: blue; margin: 10px">
     <h1>Box Model</h1>
      <p>
-       Margin
+       Definindo Margens
      </p>
 </div>
 
-~~~html
+```html
 <div style="background-color: blue; margin: 10px">
     <h1>Box Model</h1>
-     <p>
-       Defini Margin
-     </p>
+    <p>
+        Definindo Margens
+    </p>
 </div>
-~~~
+```
 
-### __Exemplo 6 ( Display )__
- 1. Block
-    <div style="display: block;background-color: blue; margin-bottom: 0.2rem">block 1</div>
-    <div style="display: block;background-color: blue; margin-bottom: 0.2rem">block 2</div>
-    <div style="display: block;background-color: blue">block 3</div>
-~~~html
-    <div style="display: block;background-color: blue; margin-bottom: 0.2rem">block 1</div>
-    <div style="display: block;background-color: blue; margin-bottom: 0.2rem">block 2</div>
-    <div style="display: block;background-color: blue">block 3</div>
-~~~
- 2. Inline ( Ignora propriedades de largura e altura )<br>
-     <div style="display: inline;background-color: blue;">Inline 1</div>
-     <div style="display: inline;background-color: blue;">Inline 2</div>
-     <div style="display: inline;background-color: blue;">Inline 3</div>
+### Exemplo 6: Display
 
-~~~html
-     <div style="display: inline;background-color: blue;">Inline 1</div>
-     <div style="display: inline;background-color: blue;">Inline 2</div>
-     <div style="display: inline;background-color: blue;">Inline 3</div>
-~~~
+#### 1. Block
+<div style="display: block; background-color: blue; margin-bottom: 0.2rem">Block 1</div>
+<div style="display: block; background-color: blue; margin-bottom: 0.2rem">Block 2</div>
+<div style="display: block; background-color: blue">Block 3</div>
 
- 3. Inline-block ( Respeitam as propriedades de largura e altura )<br>
-     <div style="display: inline-block;background-color: blue;">Inline-block 1</div>
-     <div style="display: inline-block;background-color: blue;">Inline-block 2</div>
-     <div style="display: inline-block;background-color: blue;">Inline-block 3</div>
-~~~html
-     <div style="display: inline;background-color: blue;">Inline 1</div>
-     <div style="display: inline;background-color: blue;">Inline 2</div>
-     <div style="display: inline;background-color: blue;">Inline 3</div>
-~~~
+```html
+<div style="display: block; background-color: blue; margin-bottom: 0.2rem">Block 1</div>
+<div style="display: block; background-color: blue; margin-bottom: 0.2rem">Block 2</div>
+<div style="display: block; background-color: blue">Block 3</div>
+```
+
+#### 2. Inline (Ignora propriedades de largura e altura)
+<div style="display: inline; background-color: blue;">Inline 1</div>
+<div style="display: inline; background-color: blue;">Inline 2</div>
+<div style="display: inline; background-color: blue;">Inline 3</div>
+
+```html
+<div style="display: inline; background-color: blue;">Inline 1</div>
+<div style="display: inline; background-color: blue;">Inline 2</div>
+<div style="display: inline; background-color: blue;">Inline 3</div>
+```
+
+#### 3. Inline-block (Respeitam as propriedades de largura e altura)
+<div style="display: inline-block; background-color: blue;">Inline-block 1</div>
+<div style="display: inline-block; background-color: blue;">Inline-block 2</div>
+<div style="display: inline-block; background-color: blue;">Inline-block 3</div>
+
+```html
+<div style="display: inline-block; background-color: blue;">Inline-block 1</div>
+<div style="display: inline-block; background-color: blue;">Inline-block 2</div>
+<div style="display: inline-block; background-color: blue;">Inline-block 3</div>
+```
