@@ -1,3 +1,3 @@
 # Introdução
 
-Documentação geral dos assuntos tratados na aula de Programção e Modelagem para Web.
+Documentação geral dos assuntos tratados na aula de Programação e Modelagem para Web.

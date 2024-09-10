@@ -30,3 +30,6 @@ theme:
     - search.share           # Coloca um botão para compartilhar a busca
     - navigation.indexes     # Permite a navegação para o index do menu
   not_found: index.md
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
