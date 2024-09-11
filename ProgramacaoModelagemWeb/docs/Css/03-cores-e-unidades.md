@@ -35,7 +35,8 @@ vh (viewport height) corresponde à altura visível do navegador. 100vh signific
 2. A função **radial-gradient()** em CSS cria um efeito de transição de cores a partir do centro de um elemento, irradiando de forma circular ou elíptica. Ao contrário do gradiente linear, que se estende em uma direção reta, o radial-gradient espalha o gradiente a partir de um ponto central.
 ## Código
 
-## Prática: Criar uma paleta de cores para um site fictício, aplicando gradientes e opacidades.##
+### Prática: Criar uma paleta de cores para um site fictício, aplicando gradientes e opacidades.
+
 <style>
 *{
     color: white;
@@ -148,3 +149,4 @@ body {
   
 </body>
 </html>
+```
