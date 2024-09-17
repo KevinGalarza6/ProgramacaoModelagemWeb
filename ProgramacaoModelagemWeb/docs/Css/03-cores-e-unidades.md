@@ -20,12 +20,40 @@ vh (viewport height) corresponde à altura visível do navegador. 100vh signific
 - Unidades absolutas são úteis para precisão, mas podem dificultar a responsividade. Por outro lado, as unidades relativas permitem maior flexibilidade e adaptação em diferentes tamanhos de tela, sendo mais adequadas para layouts responsivos.
  ## Cores em CSS: Nomeadas, HEX, RGB, RGBA, HSL e HSLA.##
 
-1. Nomeadas: Usa nomes predefinidos para cores comuns.  Exemplo: color: red;.
-2. HEX: Representa cores com um código hexadecimal de seis dígitos. Exemplo: color: #ff5733;.
-3. RGB: Define a cor com base na combinação de vermelho, verde e azul, com valores de 0 a 255. Exemplo: color: rgb(255, 87, 51);.
-4. RGBA: Similar ao RGB, mas inclui um canal alfa para transparência, variando de 0 (transparente) a 1 (opaco). Exemplo: color: rgba(255, 87, 51, 0.5);.
-5. HSL: Define a cor por matiz (0-360 graus), saturação e luminosidade (0%-100%). Exemplo: color: hsl(9, 100%, 60%);.
-6. HSLA: Semelhante ao HSL, mas adiciona um canal alfa para transparência. Exemplo: color: hsla(9, 100%, 60%, 0.5);.
+1. Nomeadas: Usa nomes predefinidos para cores comuns.  Exemplo: 
+```css
+color: red;
+```
+
+2. HEX: Representa cores com um código hexadecimal de seis dígitos. Exemplo: 
+
+```css
+color: #ff5733;
+```
+
+3. RGB: Define a cor com base na combinação de vermelho, verde e azul, com valores de 0 a 255. Exemplo: 
+
+```css
+color: rgb(255, 87, 51);
+```
+
+4. RGBA: Similar ao RGB, mas inclui um canal alfa para transparência, variando de 0 (transparente) a 1 (opaco). Exemplo: 
+
+```css
+color: rgba(255, 87, 51, 0.5);
+```
+
+5. HSL: Define a cor por matiz (0-360 graus), saturação e luminosidade (0%-100%). Exemplo: 
+```css
+color: hsl(9, 100%, 60%);
+```
+
+6. HSLA: Semelhante ao HSL, mas adiciona um canal alfa para transparência. Exemplo: 
+
+```css
+color: hsla(9, 100%, 60%, 0.5);
+```
+
 ## Transparência e opacidade: ##
 1. **Transparência** É a capacidade de um objeto ou cor permitir que a luz passe através dele. Em CSS, é controlada pelo canal alfa em cores rgba e hsla, onde valores baixos (próximos a 0) indicam maior transparência.
 2. **Opaco** É a medida de quão sólido ou visível um objeto ou cor é. Em CSS, a opacidade é definida de 0 a 1, onde 0 é totalmente transparente e 1 é totalmente opaco.
