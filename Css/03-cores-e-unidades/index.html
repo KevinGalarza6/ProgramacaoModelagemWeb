@@ -778,14 +778,38 @@ vh (viewport height) corresponde à altura visível do navegador. 100vh signific
  ## Cores em CSS: Nomeadas, HEX, RGB, RGBA, HSL e HSLA.##</p>
 </li>
 <li>
-<p>Nomeadas: Usa nomes predefinidos para cores comuns.  Exemplo: color: red;.</p>
+<p>Nomeadas: Usa nomes predefinidos para cores comuns.  Exemplo: 
+<div class="highlight"><pre><span></span><code><span class="nt">color</span><span class="o">:</span><span class="w"> </span><span class="nt">red</span><span class="o">;</span>
+</code></pre></div></p>
 </li>
-<li>HEX: Representa cores com um código hexadecimal de seis dígitos. Exemplo: color: #ff5733;.</li>
-<li>RGB: Define a cor com base na combinação de vermelho, verde e azul, com valores de 0 a 255. Exemplo: color: rgb(255, 87, 51);.</li>
-<li>RGBA: Similar ao RGB, mas inclui um canal alfa para transparência, variando de 0 (transparente) a 1 (opaco). Exemplo: color: rgba(255, 87, 51, 0.5);.</li>
-<li>HSL: Define a cor por matiz (0-360 graus), saturação e luminosidade (0%-100%). Exemplo: color: hsl(9, 100%, 60%);.</li>
-<li>HSLA: Semelhante ao HSL, mas adiciona um canal alfa para transparência. Exemplo: color: hsla(9, 100%, 60%, 0.5);.</li>
+<li>
+<p>HEX: Representa cores com um código hexadecimal de seis dígitos. Exemplo: </p>
+</li>
 </ol>
+<div class="highlight"><pre><span></span><code><span class="nt">color</span><span class="o">:</span><span class="w"> </span><span class="p">#</span><span class="nn">ff5733</span><span class="o">;</span>
+</code></pre></div>
+<ol>
+<li>RGB: Define a cor com base na combinação de vermelho, verde e azul, com valores de 0 a 255. Exemplo: </li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nt">color</span><span class="o">:</span><span class="w"> </span><span class="nt">rgb</span><span class="o">(</span><span class="nt">255</span><span class="o">,</span><span class="w"> </span><span class="nt">87</span><span class="o">,</span><span class="w"> </span><span class="nt">51</span><span class="o">);</span>
+</code></pre></div>
+<ol>
+<li>RGBA: Similar ao RGB, mas inclui um canal alfa para transparência, variando de 0 (transparente) a 1 (opaco). Exemplo: </li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nt">color</span><span class="o">:</span><span class="w"> </span><span class="nt">rgba</span><span class="o">(</span><span class="nt">255</span><span class="o">,</span><span class="w"> </span><span class="nt">87</span><span class="o">,</span><span class="w"> </span><span class="nt">51</span><span class="o">,</span><span class="w"> </span><span class="nt">0</span><span class="p">.</span><span class="nc">5</span><span class="o">);</span>
+</code></pre></div>
+<ol>
+<li>
+<p>HSL: Define a cor por matiz (0-360 graus), saturação e luminosidade (0%-100%). Exemplo: 
+<div class="highlight"><pre><span></span><code><span class="nt">color</span><span class="o">:</span><span class="w"> </span><span class="nt">hsl</span><span class="o">(</span><span class="nt">9</span><span class="o">,</span><span class="w"> </span><span class="nt">100</span><span class="o">%,</span><span class="w"> </span><span class="nt">60</span><span class="o">%);</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>HSLA: Semelhante ao HSL, mas adiciona um canal alfa para transparência. Exemplo: </p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nt">color</span><span class="o">:</span><span class="w"> </span><span class="nt">hsla</span><span class="o">(</span><span class="nt">9</span><span class="o">,</span><span class="w"> </span><span class="nt">100</span><span class="o">%,</span><span class="w"> </span><span class="nt">60</span><span class="o">%,</span><span class="w"> </span><span class="nt">0</span><span class="p">.</span><span class="nc">5</span><span class="o">);</span>
+</code></pre></div>
 <h2 id="transparencia-e-opacidade">Transparência e opacidade:</h2>
 <ol>
 <li><strong>Transparência</strong> É a capacidade de um objeto ou cor permitir que a luz passe através dele. Em CSS, é controlada pelo canal alfa em cores rgba e hsla, onde valores baixos (próximos a 0) indicam maior transparência.</li>
