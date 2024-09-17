@@ -7,9 +7,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Multiplos Estilos Em Css</title>
 </head>
+<style>
+    body {
+    background-color: lightgray;
+}
+
+.container {
+    font-family: Arial;
+}
+
+.destaque {
+    font-weight: bold;
+    color: blue;
+}
+.importante {
+    background-color: lightgreen;
+}
+
+#titulo-principal {
+    font-size: 36px;
+    text-align: center;
+}
+
+.container p {
+    font-size: 18px;
+}
+.container .destaque {
+    color: green;
+}
+</style>
 <body>
     <!-- Classes CSS -->
     <h1 id="titulo-principal">Título da Página</h1>
