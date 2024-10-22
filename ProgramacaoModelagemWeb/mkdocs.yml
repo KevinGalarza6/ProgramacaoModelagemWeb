@@ -1,7 +1,7 @@
 site_name: Programação e Modelagem para Web
 theme:
   name: material
-  logo: 'images/typescript-logo.png'
+  logo: 'images/prog-web-logo.png'
   language: pt
   font:
     text: Roboto
@@ -33,3 +33,10 @@ theme:
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
+nav:
+  - Home: index.md
+  - Armazenamento:
+      - "Cookies": Armazenamento/01-cookies.md
+      - "Local Storage": Armazenamento/02-local-storage.md
+      - "Session Storage": Armazenamento/03-session-storage.md
+      - "IndexedDB": Armazenamento/04-indexedDB.md
