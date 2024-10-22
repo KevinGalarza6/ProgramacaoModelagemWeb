@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../02-local-storage/">
+      
+      
+        <link rel="next" href="../04-indexedDB/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>4 - Tipografia - Programação e Modelagem para Web</title>
+        <title>Session Storage - Programação e Modelagem para Web</title>
       
     
     
@@ -68,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#4-tipografia" class="md-skip">
+        <a href="#session-storage" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -101,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4 - Tipografia
+              Session Storage
             
           </span>
         </div>
@@ -216,11 +220,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../Armazenamento/01-cookies/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../01-cookies/" class="md-tabs__link">
           
   
     
@@ -289,8 +295,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -305,17 +313,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -326,7 +337,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Armazenamento
@@ -340,7 +351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Armazenamento/01-cookies/" class="md-nav__link">
+      <a href="../01-cookies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -361,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Armazenamento/02-local-storage/" class="md-nav__link">
+      <a href="../02-local-storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -379,10 +390,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Armazenamento/03-session-storage/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Session Storage
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -391,6 +422,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#em-que-cenario-essa-estrategia-e-recomendada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Em que cenário essa estratégia é recomendada?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quais-sao-as-vantagens-do-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quais são as vantagens do uso?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quais-sao-as-restricoes-do-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quais são as restrições do uso?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quais são as restrições do uso?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#duracao-limitada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duração Limitada:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limite-de-armazenamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limite de Armazenamento:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acessibilidade-limitada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acessibilidade Limitada:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emplo-de-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emplo de implementação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-completo-carrinho-de-compras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo Completo: Carrinho de Compras
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -403,7 +532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Armazenamento/04-indexedDB/" class="md-nav__link">
+      <a href="../04-indexedDB/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -451,45 +580,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#fontes-web-font-family-fallback-fonts" class="md-nav__link">
+  <a href="#em-que-cenario-essa-estrategia-e-recomendada" class="md-nav__link">
     <span class="md-ellipsis">
-      Fontes web: Font-family, fallback fonts
+      Em que cenário essa estratégia é recomendada?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#google-fonts-e-fontes-personalizadas" class="md-nav__link">
+  <a href="#quais-sao-as-vantagens-do-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Google Fonts e fontes personalizadas.
+      Quais são as vantagens do uso?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#propriedades-tipograficas-tamanho-altura-da-linha-line-height-espacamento-entre-letras-letter-spacing-e-entre-palavras-word-spacing" class="md-nav__link">
+  <a href="#quais-sao-as-restricoes-do-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Propriedades tipográficas: Tamanho, altura da linha (line-height), espaçamento entre letras (letter-spacing) e entre palavras (word-spacing).
+      Quais são as restrições do uso?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quais são as restrições do uso?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#duracao-limitada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duração Limitada:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limite-de-armazenamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limite de Armazenamento:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acessibilidade-limitada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acessibilidade Limitada:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emplo-de-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emplo de implementação
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#estilizacao-de-texto-negrito-italico-sublinhado-alinhamento-decoracao-e-transformacao" class="md-nav__link">
+  <a href="#exemplo-completo-carrinho-de-compras" class="md-nav__link">
     <span class="md-ellipsis">
-      Estilização de texto: Negrito, itálico, sublinhado, alinhamento, decoração e transformação.
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pratica-criar-um-layout-de-texto-para-um-artigo-explorando-fontes-e-estilos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prática: Criar um layout de texto para um artigo, explorando fontes e estilos.
+      Exemplo Completo: Carrinho de Compras
     </span>
   </a>
   
@@ -510,210 +672,71 @@
                   
 
 
-<h1 id="4-tipografia">4 - Tipografia</h1>
+<h1 id="session-storage">Session Storage</h1>
+<p>O sessionStorage é uma funcionalidade do navegador que armazena dados de forma temporária, sendo apagados quando o usuário fecha a aba ou o navegador.</p>
+<p>É similar ao localStorage, mas com a diferença de que os dados do sessionStorage expiram quando a sessão da página é fechada, enquanto os dados do localStorage não expiram.</p>
+<p>Os Dados não são compartilhados entre abas ou janelas, mesmo quando estão acessando a mesma origem.</p>
+<h2 id="em-que-cenario-essa-estrategia-e-recomendada">Em que cenário essa estratégia é recomendada?</h2>
 <ul>
-<li>Objetivo: Explorar como estilizar texto e escolher fontes adequadas.</li>
-</ul>
-<h2 id="fontes-web-font-family-fallback-fonts">Fontes web: Font-family, fallback fonts</h2>
-<ul>
-<li><strong>Font-family</strong> e usada para definir o tipo de fonte que sera usada no texto de um elemento HTML.</li>
-<li><strong>fallback fonts</strong> sao as fontes alternativas que o navegador tentara aplicar se a fonte principal nao esteja disponivel o conceito dessa fonte e importante para garantir que o conteudo seja exibido dde forma legivel.</li>
-</ul>
-<h2 id="google-fonts-e-fontes-personalizadas">Google Fonts e fontes personalizadas.</h2>
-<ul>
-<li><strong>Google Fonts</strong> sao uma coleçao de fontes gratuitas que podem ser facilmente usadas em projetos web que permitem que desenvolvedores integrem fontes externas ao site, garantindo que elas sejam exibidas corretamente, independentemente do sistema operacional ou dispositivo do usuário.</li>
-<li><strong>fontes personalizadas</strong> sao aquelas que permitem que você use tipos de letra específicos que não estão disponíveis por padrão nos navegadores. Isso é útil para dar um estilo único ao seu site.</li>
-<li><strong>Como usar fontes personalizadas:</strong></li>
-<li>Baixe a fonte: Primeiro, você precisa do arquivo da fonte (por exemplo, .woff2 ou .woff).</li>
-<li>Defina a fonte no CSS: Use a regra @font-face para dizer ao navegador onde encontrar a fonte.</li>
 <li>
-<p>Aplique a fonte: Use a propriedade font-family para aplicar a fonte aos elementos da sua página.</p>
+<p><strong>Dados de sessão:</strong> Carrinhos de compras: Armazenar itens adicionados ao carrinho enquanto o usuário navega pela loja, permitindo que ele continue a adicionar ou remover itens sem perder o que já selecionou.</p>
 </li>
 <li>
-<p><strong>Exemplo</strong>:</p>
+<p><strong>Formulários:</strong> Salvar dados de formulários preenchidos parcialmente para que o usuário possa continuar a preenchê-los mais tarde, caso a página seja recarregada ou o usuário navegue para outra página.</p>
+</li>
+<li>
+<p><strong>Preferências do usuário:</strong> Armazenar temporariamente as preferências do usuário durante uma sessão, como tema, idioma ou layout.</p>
+</li>
+<li>
+<p><strong>Dados sensíveis:</strong> Tokens de autenticação: Em alguns casos, pode ser útil armazenar tokens de autenticação no sessionStorage para facilitar o acesso a recursos protegidos durante uma sessão. No entanto, é importante lembrar que o sessionStorage não é uma forma segura de armazenar dados confidenciais a longo prazo, pois os dados podem ser inspecionados por ferramentas de desenvolvedor.</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">font-face</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nt">font-family</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;MinhaFonte&quot;</span><span class="o">;</span>
-<span class="w">  </span><span class="nt">src</span><span class="o">:</span><span class="w"> </span><span class="nt">url</span><span class="o">(</span><span class="s2">&quot;caminho/para/minha-fonte.woff2&quot;</span><span class="o">)</span><span class="w"> </span><span class="nt">format</span><span class="o">(</span><span class="s2">&quot;woff2&quot;</span><span class="o">);</span>
-<span class="w">  </span><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MinhaFonte&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Arial</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span>
-<span class="w">  </span><span class="p">}</span>
+<h2 id="quais-sao-as-vantagens-do-uso">Quais são as vantagens do uso?</h2>
+<ul>
+<li><strong>Privacidade:</strong> Os dados são armazenados localmente e não são enviados para o servidor, o que pode ser importante para alguns tipos de dados.</li>
+<li><strong>Desempenho:</strong> As operações de leitura e escrita no sessionStorage são geralmente mais rápidas do que as operações em um banco de dados.</li>
+<li><strong>Facilidade de uso:</strong> A API do sessionStorage é simples e fácil de usar.</li>
+</ul>
+<h2 id="quais-sao-as-restricoes-do-uso">Quais são as restrições do uso?</h2>
+<h3 id="duracao-limitada">Duração Limitada:</h3>
+<ul>
+<li><strong>Vinculado à Sessão:</strong> Os dados armazenados no sessionStorage são apagados automaticamente quando a sessão do navegador é encerrada. Isso ocorre ao fechar todas as abas e janelas do navegador relacionadas a esse domínio.</li>
+<li><strong>Não Persistente:</strong> Ao contrário do localStorage, o sessionStorage não persiste os dados entre diferentes sessões.</li>
+</ul>
+<h3 id="limite-de-armazenamento">Limite de Armazenamento:</h3>
+<ul>
+<li><strong>Capacidade Finita:</strong> Embora o limite de armazenamento varie entre os navegadores, ele é geralmente menor do que o do localStorage. Exceder esse limite pode resultar em comportamentos inesperados.</li>
+</ul>
+<h3 id="acessibilidade-limitada">Acessibilidade Limitada:</h3>
+<ul>
+<li>Ambiente do Cliente: O sessionStorage é acessível apenas no ambiente do cliente (browser). Isso significa que você não pode acessar os dados armazenados no sessionStorage a partir do servidor.</li>
+</ul>
+<h2 id="emplo-de-implementacao">Emplo de implementação</h2>
+<div class="highlight"><pre><span></span><code><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">Armazenando</span><span class="w"> </span><span class="nx">um</span><span class="w"> </span><span class="nx">valor</span><span class="w"> </span><span class="nx">no</span><span class="w"> </span><span class="nx">sessionStorage</span><span class="w"> </span><span class="o">--&gt;</span>
+<span class="nx">sessionstorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s2">&quot;nome&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;João&quot;</span><span class="p">);</span>
+
+<span class="c">&lt;!--</span><span class="w"> </span><span class="nx">Recuperando</span><span class="w"> </span><span class="nx">um</span><span class="w"> </span><span class="nx">valor</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="nx">sessionStorage</span><span class="w"> </span><span class="o">--&gt;</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">nomeArmazenado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s2">&quot;nome&quot;</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">nomeArmazenado</span><span class="p">);</span><span class="w"> </span><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">Imprime</span><span class="w"> </span><span class="s2">&quot;João&quot;</span><span class="w"> </span><span class="nx">no</span><span class="w"> </span><span class="nx">console</span><span class="w"> </span><span class="o">--&gt;</span>
+
+<span class="c">&lt;!--</span><span class="w"> </span><span class="nx">Removendo</span><span class="w"> </span><span class="nx">um</span><span class="w"> </span><span class="nx">item</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="nx">sessionStorage</span><span class="w"> </span><span class="o">--&gt;</span>
+<span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">(</span><span class="s2">&quot;nome&quot;</span><span class="p">);</span>
+</code></pre></div>
+<h2 id="exemplo-completo-carrinho-de-compras">Exemplo Completo: Carrinho de Compras</h2>
+<div class="highlight"><pre><span></span><code><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">Função</span><span class="w"> </span><span class="nx">para</span><span class="w"> </span><span class="nx">adicionar</span><span class="w"> </span><span class="nx">um</span><span class="w"> </span><span class="nx">item</span><span class="w"> </span><span class="nx">ao</span><span class="w"> </span><span class="nx">carrinho</span><span class="w"> </span><span class="o">--&gt;</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">adicionarAoCarrinho</span><span class="p">(</span><span class="nx">produto</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">carrinho</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s2">&quot;carrinho&quot;</span><span class="p">))</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">[];</span>
+<span class="w">    </span><span class="nx">carrinho</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">produto</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s2">&quot;carrinho&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">carrinho</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="c">&lt;!--</span><span class="w"> </span><span class="nx">Função</span><span class="w"> </span><span class="nx">para</span><span class="w"> </span><span class="nx">exibir</span><span class="w"> </span><span class="nx">os</span><span class="w"> </span><span class="nx">itens</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="nx">carrinho</span><span class="w"> </span><span class="o">--&gt;</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">mostrarCarrinho</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">carrinho</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s2">&quot;carrinho&quot;</span><span class="p">))</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">[];</span>
+<span class="w">    </span><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">Aqui</span><span class="w"> </span><span class="nx">você</span><span class="w"> </span><span class="nx">renderizaria</span><span class="w"> </span><span class="nx">os</span><span class="w"> </span><span class="nx">itens</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="nx">carrinho</span><span class="w"> </span><span class="nx">na</span><span class="w"> </span><span class="nx">sua</span><span class="w"> </span><span class="nx">página</span><span class="w"> </span><span class="o">--&gt;</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">carrinho</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-<h2 id="propriedades-tipograficas-tamanho-altura-da-linha-line-height-espacamento-entre-letras-letter-spacing-e-entre-palavras-word-spacing">Propriedades tipográficas: Tamanho, altura da linha (line-height), espaçamento entre letras (letter-spacing) e entre palavras (word-spacing).</h2>
-<ul>
-<li><strong>Tamanho font-size</strong> define o tamanho do texto.</li>
-<li><strong>Exemplo</strong>:
-  <div class="highlight"><pre><span></span><code><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></li>
-<li><strong>Altura da linha (line-height)</strong> Embora não seja diretamente relacionada ao espaçamento entre letras e palavras, a propriedade line-height controla o espaço vertical entre as linhas de texto. Enfim, ao ajustá-la, podemos melhorar a legibilidade e o espaçamento geral do texto.</li>
-<li><strong>Exemplo</strong>:
-  <div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">paragrafo-legivel</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">line-height</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="p">;</span><span class="w"> </span><span class="c">/* Define a altura das linhas como 1.5 vezes o tamanho da fonte */</span>
-<span class="p">}</span>
-</code></pre></div></li>
-<li>
-<p><strong>Espaçamento entre letras (letter-spacing)</strong> permite ajustar o espaço entre os caracteres de um texto assim podemos usar valores positivos para aumentar o espaçamento e valores negativos para reduzi-lo.</p>
-</li>
-<li>
-<p><strong>Exemplo</strong>:</p>
-</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">texto-destacado</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">letter-spacing</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="c">/* Aumenta o espaçamento entre as letras em 2 px */</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">texto-condensado</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">letter-spacing</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="c">/* Reduz o espaçamento entre as letras em 1 px */</span>
-<span class="p">}</span>
-</code></pre></div>
-<ul>
-<li><strong>Palavras (word-spacing)</strong>controla o espaço entre as palavras de um texto.</li>
-<li><strong>Exemplo</strong>:
-  <div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">texto-ampla</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">word-spacing</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="c">/* Aumenta o espaçamento entre as palavras em 5 px */</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">texto-compacta</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">word-spacing</span><span class="p">:</span><span class="w"> </span><span class="mi">-3</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="c">/* Reduz o espaçamento entre as palavras em 3 px */</span>
-<span class="p">}</span>
-</code></pre></div></li>
-</ul>
-<h2 id="estilizacao-de-texto-negrito-italico-sublinhado-alinhamento-decoracao-e-transformacao">Estilização de texto: Negrito, itálico, sublinhado, alinhamento, decoração e transformação.</h2>
-<ul>
-<li>
-<p><strong>Negrito(font-weight)</strong> deixa o texto em negrito</p>
-</li>
-<li>
-<p><strong>Exemplo</strong>:</p>
-</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="kc">bold</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-<ul>
-<li>
-<p><strong>Itálico (font-style)</strong> define um estilo no texto aqui por exemplo estamos definindo o estilo italico.</p>
-</li>
-<li>
-<p><strong>Exemplo</strong>:</p>
-</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">font-style</span><span class="p">:</span><span class="w"> </span><span class="kc">italic</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-<ul>
-<li><strong>Sublinhado (text-decoration)</strong> Usado para adicionar uma linha abaixo do texto.</li>
-<li>
-<ul>
-<li><strong>Exemplo</strong>:</li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">text-decoration</span><span class="p">:</span><span class="w"> </span><span class="kc">underline</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-<ul>
-<li>
-<p><strong>Alinhamento (text-align)</strong> Controla o alinhamento horizontal do texto. Os valores comuns são left (esquerda), right (direita), center (centralizado)</p>
-</li>
-<li>
-<p><strong>Exemplo</strong>:
-  <div class="highlight"><pre><span></span><code><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></p>
-</li>
-<li><strong>Decoração (text-decoration)</strong> e usado para remover a decoração de texto, como sublinhados de links, ou para criar outros efeitos como por exemplo <strong>text-decoration: line-through;</strong> Risca o texto</li>
-<li><strong>Exemplo</strong>:</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="nt">p</span><span class="p">{</span><span class="k">text-decoration</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;}</span><span class="err">`</span>
-</code></pre></div>
-<ul>
-<li><strong>Transformação (text-transform)</strong> controla a transformação do texto em maiúsculas, minúsculas ou capitalização de cada palavra.</li>
-<li><strong>Exemplo</strong>:
-  <div class="highlight"><pre><span></span><code><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">text-transform</span><span class="p">:</span><span class="w"> </span><span class="kc">uppercase</span><span class="p">;</span><span class="w"> </span><span class="c">/*deixa o texto em maiúsculas*/</span>
-<span class="p">}</span>
-</code></pre></div></li>
-</ul>
-<h2 id="pratica-criar-um-layout-de-texto-para-um-artigo-explorando-fontes-e-estilos">Prática: Criar um layout de texto para um artigo, explorando fontes e estilos.</h2>
-<style>
-  body {
-    font-family: Roboto, sans-serif;
-    line-height: 1.6;
-    color: white;
-    background: black;
-    margin: 0;
-    padding: 20px;
-  }
-
-  .title {
-    font-family: fantasy;
-    line-height: 1.6;
-    color: white;
-    background: black;
-    margin: 0;
-    padding: 20px;
-  }
-
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  header h1 {
-    font-size: 2.5em;
-    font-weight: 700;
-    color: white;
-    margin: 0;
-  }
-
-  h2 {
-    font-size: 2em;
-    font-weight: 600;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  p {
-    font-size: 1em;
-    margin-bottom: 15px;
-  }
-  .import {
-    text-decoration: underline;
-    color: yellow;
-  }
-</style>
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Layout</title>
-  </head>
-  <body>
-    <header>
-      <h1 class="title">Bem vindo</h1>
-    </header>
-
-    <main>
-      <h2>Texto</h2>
-      <p>Paragrafo</p>
-
-      <h2>Texto</h2>
-      <p>Paragrafo</p>
-
-      <h2>Texto</h2>
-      <p class="import">Paragrafo</p>
-    </main>
-  </body>
-</html>
 
 
 

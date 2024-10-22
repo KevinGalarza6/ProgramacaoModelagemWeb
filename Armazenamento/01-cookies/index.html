@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../02-local-storage/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>5 - Box Model e Layout - Programação e Modelagem para Web</title>
+        <title>Cookies - Programação e Modelagem para Web</title>
       
     
     
@@ -68,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#5-box-model-e-layout" class="md-skip">
+        <a href="#resumo-sobre-cookies" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -101,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              5 - Box Model e Layout
+              Cookies
             
           </span>
         </div>
@@ -216,11 +220,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../Armazenamento/01-cookies/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
     
@@ -289,8 +295,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -305,17 +313,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -326,7 +337,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Armazenamento
@@ -337,10 +348,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Armazenamento/01-cookies/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Cookies
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -349,6 +380,137 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-e-o-funcionamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como é o Funcionamento?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Como é o Funcionamento?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criacao-do-cookie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criação do Cookie:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#envio-em-requisicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Envio em Requisições:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dados-que-contem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dados que Contém:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cenarios-recomendados-para-o-uso-de-cookies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenários Recomendados para o Uso de Cookies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vantagens-do-uso-de-cookies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vantagens do Uso de Cookies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restricoes-do-uso-de-cookies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Restrições do Uso de Cookies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codigo-de-exemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Código de Exemplo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Código de Exemplo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criar-um-cookie-que-expira-em-7-dias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criar um cookie que expira em 7 dias
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ler-o-valor-de-um-cookie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ler o valor de um cookie
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de uso
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -361,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Armazenamento/02-local-storage/" class="md-nav__link">
+      <a href="../02-local-storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -382,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Armazenamento/03-session-storage/" class="md-nav__link">
+      <a href="../03-session-storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -403,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Armazenamento/04-indexedDB/" class="md-nav__link">
+      <a href="../04-indexedDB/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -451,73 +613,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#o-box-model-no-css-e-essencial-para-o-desenvolvimento-web-pois-define-como-os-elementos-sao-dispostos-e-estilizados-na-pagina" class="md-nav__link">
+  <a href="#como-e-o-funcionamento" class="md-nav__link">
     <span class="md-ellipsis">
-      O Box Model no CSS é essencial para o desenvolvimento web, pois define como os elementos são dispostos e estilizados na página.
+      Como é o Funcionamento?
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#componentes-do-box-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      Componentes do Box Model:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Componentes do Box Model:">
+    <nav class="md-nav" aria-label="Como é o Funcionamento?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-largura-width" class="md-nav__link">
+  <a href="#criacao-do-cookie" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Largura (width)
+      Criação do Cookie:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-altura-height" class="md-nav__link">
+  <a href="#envio-em-requisicoes" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Altura (height)
+      Envio em Requisições:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-preenchimento-interno-padding" class="md-nav__link">
+  <a href="#dados-que-contem" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Preenchimento Interno (Padding)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-bordas-border" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Bordas (Border)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-margens-margin" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Margens (Margin)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-display" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Display
+      Dados que Contém:
     </span>
   </a>
   
@@ -529,82 +655,64 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exemplo-1-definindo-largura-width" class="md-nav__link">
+  <a href="#cenarios-recomendados-para-o-uso-de-cookies" class="md-nav__link">
     <span class="md-ellipsis">
-      Exemplo 1: Definindo Largura (width)
+      Cenários Recomendados para o Uso de Cookies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exemplo-2-definindo-altura-height" class="md-nav__link">
+  <a href="#vantagens-do-uso-de-cookies" class="md-nav__link">
     <span class="md-ellipsis">
-      Exemplo 2: Definindo Altura (height)
+      Vantagens do Uso de Cookies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exemplo-3-preenchimento-interno-padding" class="md-nav__link">
+  <a href="#restricoes-do-uso-de-cookies" class="md-nav__link">
     <span class="md-ellipsis">
-      Exemplo 3: Preenchimento Interno (Padding)
+      Restrições do Uso de Cookies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exemplo-4-bordas-border" class="md-nav__link">
+  <a href="#codigo-de-exemplo" class="md-nav__link">
     <span class="md-ellipsis">
-      Exemplo 4: Bordas (Border)
+      Código de Exemplo
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exemplo-5-margens-margin" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exemplo 5: Margens (Margin)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exemplo-6-display" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exemplo 6: Display
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Exemplo 6: Display">
+    <nav class="md-nav" aria-label="Código de Exemplo">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-block" class="md-nav__link">
+  <a href="#criar-um-cookie-que-expira-em-7-dias" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Block
+      Criar um cookie que expira em 7 dias
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-inline-ignora-propriedades-de-largura-e-altura" class="md-nav__link">
+  <a href="#ler-o-valor-de-um-cookie" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Inline (Ignora propriedades de largura e altura)
+      Ler o valor de um cookie
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-inline-block-respeitam-as-propriedades-de-largura-e-altura" class="md-nav__link">
+  <a href="#exemplo-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Inline-block (Respeitam as propriedades de largura e altura)
+      Exemplo de uso
     </span>
   </a>
   
@@ -630,148 +738,66 @@
                   
 
 
-<h1 id="5-box-model-e-layout">5 - Box Model e Layout</h1>
-<h3 id="o-box-model-no-css-e-essencial-para-o-desenvolvimento-web-pois-define-como-os-elementos-sao-dispostos-e-estilizados-na-pagina">O Box Model no CSS é essencial para o desenvolvimento web, pois define como os elementos são dispostos e estilizados na página.</h3>
-<div style="text-align:center">
-    <img src="../../images/representacao-box-model.png" alt="Representação do Box Model" style="width:50%;">
-</div>
-
-<h3 id="componentes-do-box-model">Componentes do Box Model:</h3>
-<h4 id="1-largura-width">1. Largura (width)</h4>
-<p>Define a largura do conteúdo de um elemento.</p>
-<h4 id="2-altura-height">2. Altura (height)</h4>
-<p>Define a altura do conteúdo de um elemento.</p>
-<h4 id="3-preenchimento-interno-padding">3. Preenchimento Interno (Padding)</h4>
+<h1 id="resumo-sobre-cookies">Resumo sobre Cookies</h1>
+<p>Cookies são pequenos arquivos de dados enviados por um servidor web e armazenados no navegador do usuário. Eles contêm informações sobre a sessão, preferências ou outros dados de interesse para o site. Os cookies permitem que um site "lembre" informações entre diferentes visitas ou sessões.</p>
+<h2 id="como-e-o-funcionamento">Como é o Funcionamento?</h2>
+<h3 id="criacao-do-cookie">Criação do Cookie:</h3>
+<p>Quando um usuário visita um site, o servidor pode enviar um cookie para o navegador. Esse cookie é armazenado localmente no dispositivo do usuário.</p>
+<h3 id="envio-em-requisicoes">Envio em Requisições:</h3>
+<p>Toda vez que o usuário volta ao site, o navegador envia automaticamente o cookie armazenado junto com a solicitação HTTP, permitindo que o servidor identifique o usuário ou mantenha o estado.</p>
+<h3 id="dados-que-contem">Dados que Contém:</h3>
+<p>Um cookie pode conter dados como:
+- Identificador de sessão
+- Preferências do usuário
+- Token de autenticação
+- Informações de carrinho de compras</p>
+<p>Os cookies têm uma data de expiração, após a qual o navegador os exclui automaticamente.</p>
+<h2 id="cenarios-recomendados-para-o-uso-de-cookies">Cenários Recomendados para o Uso de Cookies</h2>
 <ul>
-<li><strong>padding-top</strong>: Espaço interno no topo.</li>
-<li><strong>padding-right</strong>: Espaço interno à direita.</li>
-<li><strong>padding-bottom</strong>: Espaço interno na parte inferior.</li>
-<li><strong>padding-left</strong>: Espaço interno à esquerda.</li>
-<li><strong>padding</strong>: Define o mesmo preenchimento para todos os lados.</li>
+<li><strong>Gerenciamento de Sessão</strong>: Manter os usuários logados em um site mesmo após recarregar ou navegar entre páginas.</li>
+<li><strong>Personalização</strong>: Armazenar preferências como idioma, layout, ou temas selecionados pelo usuário.</li>
+<li><strong>Análise de Comportamento</strong>: Coletar dados de navegação para analisar o comportamento dos usuários e melhorar a experiência do site.</li>
+<li><strong>Carrinhos de Compras</strong>: Manter itens selecionados no carrinho de compras entre visitas ao site ou sessões.</li>
 </ul>
-<h4 id="4-bordas-border">4. Bordas (Border)</h4>
+<h2 id="vantagens-do-uso-de-cookies">Vantagens do Uso de Cookies</h2>
 <ul>
-<li><strong>border-width</strong>: Define a largura da borda.</li>
-<li><strong>border-style</strong>: Define o estilo da borda.</li>
-<li><strong>border-color</strong>: Define a cor da borda.</li>
+<li><strong>Persistência de Dados</strong>: Permite que dados sejam mantidos entre diferentes visitas ao site.</li>
+<li><strong>Customização da Experiência do Usuário</strong>: Oferece personalização, lembrando preferências de navegação, localização, idioma, entre outros.</li>
+<li><strong>Compatibilidade Universal</strong>: Todos os navegadores modernos suportam cookies, tornando-os uma ferramenta padrão.</li>
+<li><strong>Suporte a Sessões sem Estado</strong>: Como o HTTP é um protocolo sem estado, cookies permitem que um site "lembre" informações de sessões passadas.</li>
 </ul>
-<h4 id="5-margens-margin">5. Margens (Margin)</h4>
+<h2 id="restricoes-do-uso-de-cookies">Restrições do Uso de Cookies</h2>
 <ul>
-<li><strong>margin-top</strong>: Define a margem superior.</li>
-<li><strong>margin-right</strong>: Define a margem à direita.</li>
-<li><strong>margin-bottom</strong>: Define a margem inferior.</li>
-<li><strong>margin-left</strong>: Define a margem à esquerda.</li>
-<li><strong>margin</strong>: Define a mesma margem para todos os lados.</li>
+<li><strong>Limite de Tamanho</strong>: O tamanho de um cookie é limitado a cerca de 4KB, o que impede o armazenamento de grandes quantidades de dados.</li>
+<li><strong>Privacidade e Segurança</strong>: Se mal utilizados, podem representar riscos à privacidade, pois permitem rastrear a atividade do usuário. Cookies mal configurados podem ser vulneráveis a ataques como Cross-Site Scripting (XSS) ou Cross-Site Request Forgery (CSRF).</li>
+<li><strong>Expiração</strong>: Cookies têm uma data de expiração. Após essa data, são removidos automaticamente, o que pode fazer com que dados armazenados sejam perdidos.</li>
+<li><strong>Regras de Consentimento</strong>: Muitos países exigem que os sites obtenham o consentimento explícito dos usuários antes de armazenar cookies, especialmente para finalidades de rastreamento ou publicidade.</li>
 </ul>
-<h4 id="6-display">6. Display</h4>
-<p>Define como o elemento será exibido na página.</p>
-<ul>
-<li><strong>Block</strong>: O elemento ocupa toda a largura disponível.</li>
-<li><strong>Inline</strong>: O elemento ocupa apenas o espaço necessário.</li>
-<li><strong>Inline-block</strong>: Combina as características de block e inline.</li>
-</ul>
-<h3 id="exemplo-1-definindo-largura-width">Exemplo 1: Definindo Largura (width)</h3>
-<div style="background-color: blue; width: 50%">
-    <h1>Box Model</h1>
-     <p>
-       Definindo Largura
-     </p>
-</div>
-
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background-color: blue; width: 50%&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Box Model<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-        Definindo Largura
-    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<h2 id="codigo-de-exemplo">Código de Exemplo</h2>
+<h3 id="criar-um-cookie-que-expira-em-7-dias">Criar um cookie que expira em 7 dias</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">setCookie</span><span class="p">(</span><span class="nx">nome</span><span class="p">,</span><span class="w"> </span><span class="nx">valor</span><span class="p">,</span><span class="w"> </span><span class="nx">dias</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">    </span><span class="nx">data</span><span class="p">.</span><span class="nx">setTime</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="nx">dias</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">24</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">60</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">60</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">1000</span><span class="p">));</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">expiracao</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;expires=&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">data</span><span class="p">.</span><span class="nx">toUTCString</span><span class="p">();</span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">cookie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nome</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;=&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">valor</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;;&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">expiracao</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;;path=/&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
-<h3 id="exemplo-2-definindo-altura-height">Exemplo 2: Definindo Altura (height)</h3>
-<div style="background-color: blue; height: 2rem">
-    <h1>Box Model</h1>
-     <p>
-       Definindo Altura
-     </p>
-</div>
-
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background-color: blue; height: 2rem&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Box Model<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-        Definindo Altura
-    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<h3 id="ler-o-valor-de-um-cookie">Ler o valor de um cookie</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">getCookie</span><span class="p">(</span><span class="nx">nome</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">nomeIgual</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nome</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;=&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">cookiesArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">cookie</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">cookiesArray</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">cookiesArray</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">trim</span><span class="p">();</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">nomeIgual</span><span class="p">)</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="nx">nomeIgual</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
-<h3 id="exemplo-3-preenchimento-interno-padding">Exemplo 3: Preenchimento Interno (Padding)</h3>
-<div style="background-color: blue; padding: 1rem">
-    <h1>Box Model</h1>
-     <p>
-       Definindo Preenchimento
-     </p>
-</div>
-
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background-color: blue; padding: 1rem&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Box Model<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-        Definindo Preenchimento
-    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
-<h3 id="exemplo-4-bordas-border">Exemplo 4: Bordas (Border)</h3>
-<div style="background-color: blue; padding: 1rem">
-    <h1 style="border-width: 5px; border-style: solid; border-color: #fff;">Box Model</h1>
-     <p>
-       Definindo Borda
-     </p>
-</div>
-
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background-color: blue; padding: 1rem&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;border-width: 5px; border-style: solid; border-color: #fff;&quot;</span><span class="p">&gt;</span>Box Model<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-        Definindo Borda
-    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
-<h3 id="exemplo-5-margens-margin">Exemplo 5: Margens (Margin)</h3>
-<div style="background-color: blue; margin: 10px">
-    <h1>Box Model</h1>
-     <p>
-       Definindo Margens
-     </p>
-</div>
-
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background-color: blue; margin: 10px&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Box Model<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-        Definindo Margens
-    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
-<h3 id="exemplo-6-display">Exemplo 6: Display</h3>
-<h4 id="1-block">1. Block</h4>
-<div style="display: block; background-color: blue; margin-bottom: 0.2rem">Block 1</div>
-<div style="display: block; background-color: blue; margin-bottom: 0.2rem">Block 2</div>
-<div style="display: block; background-color: blue">Block 3</div>
-
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: block; background-color: blue; margin-bottom: 0.2rem&quot;</span><span class="p">&gt;</span>Block 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: block; background-color: blue; margin-bottom: 0.2rem&quot;</span><span class="p">&gt;</span>Block 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: block; background-color: blue&quot;</span><span class="p">&gt;</span>Block 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
-<h4 id="2-inline-ignora-propriedades-de-largura-e-altura">2. Inline (Ignora propriedades de largura e altura)</h4>
-<div style="display: inline; background-color: blue;">Inline 1</div>
-<div style="display: inline; background-color: blue;">Inline 2</div>
-<div style="display: inline; background-color: blue;">Inline 3</div>
-
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: inline; background-color: blue;&quot;</span><span class="p">&gt;</span>Inline 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: inline; background-color: blue;&quot;</span><span class="p">&gt;</span>Inline 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: inline; background-color: blue;&quot;</span><span class="p">&gt;</span>Inline 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
-<h4 id="3-inline-block-respeitam-as-propriedades-de-largura-e-altura">3. Inline-block (Respeitam as propriedades de largura e altura)</h4>
-<div style="display: inline-block; background-color: blue;">Inline-block 1</div>
-<div style="display: inline-block; background-color: blue;">Inline-block 2</div>
-<div style="display: inline-block; background-color: blue;">Inline-block 3</div>
-
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: inline-block; background-color: blue;&quot;</span><span class="p">&gt;</span>Inline-block 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: inline-block; background-color: blue;&quot;</span><span class="p">&gt;</span>Inline-block 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: inline-block; background-color: blue;&quot;</span><span class="p">&gt;</span>Inline-block 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<h3 id="exemplo-de-uso">Exemplo de uso</h3>
+<div class="highlight"><pre><span></span><code><span class="nx">setCookie</span><span class="p">(</span><span class="s2">&quot;usuario&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Joao&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">7</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">getCookie</span><span class="p">(</span><span class="s2">&quot;usuario&quot;</span><span class="p">));</span><span class="w">  </span><span class="c1">// Saída: Joao</span>
 </code></pre></div>
 
 
